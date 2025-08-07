@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* se comento el fon del body para que no interfiera con el color del div.
+body{
+    background-color: burlywood;
+}*/
+body{
+    font-family: sans-serif;/*se agrega una fuente para que se vea mas bonito**/
+    background-image: url("image1.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;/*se anexa para que no este pegado*/
+}
+h1, h2, p{
+    text-align: center;
+}
+/*Se cambia el h1 y h2 para que se vea mas llamativo*/
+h1, h2{
+    /*font-family: impact; en este caso se pone solo una fuente pero es necesario anexar otra fuente en caso que no se tenga la fuente impact y no se ponga la default y afecte el diseño*/
+    font-family: impac, serif;
+}
+h1{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 30px;
+}
+
+.established{
+    font-style: italic;/* se pone en cursiva*/
+}
+.menu{
+    width: 80%;
+    max-width: 500px;/* se pone un maximo de ancho para que no se vea tan grande en pantallas grandes, es decir que con widt y maxwidth se hace responsivo*/
+    background-color: burlywood;
+    /*se poner un margin lefty rigth auto para centrar el div*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Se pone un padding para que el texto no quede pegado al boorde de la pagina*/
+    /*padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; para que no sea redundante se puede utilizar solo paddding y se hara el cambio en los 4 ldos*/
+    padding: 20px;
+}
+.flavor, .dessert{
+    text-align: left; /* se alinea a la izquierda*/
+    /*width: 50%; se pone un ancho del 50% para que ocupe la mitad del articulo*/
+    /*width: 49%;/* hay que tomar en cuenta que por default el sistema toma un margen del 1% por lo que se pone un 49%*/
+    width: 75%;/* se pone el 75% ya que el sabor tiena mas texto que el precio*/
+}
+.price{
+    text-align: right; /*se alinea a la derecha*/
+    /*width: 50%; se pone un ancho del 50% para que ocupe la mita del articulo*/
+    /*width: 49%;/* hay que tomar en cuenta que por default el sistema toma un margen del 1% por lo que se pone un 49%*/
+    width: 25%;/* se pone el 25% ya que el precio tiene menor texto que el sabor*/
+}
+/*Se agrega la clase item al articule para poner display flex con el atributo inline-bloock para que se alinien en el misma linea*/
+.item p{
+    display: inline-block;
+    /*Se pone un margen para la separcion y se vea mas estetico y atractivo para el usuario*/
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 18px;/*Se pone un tamaño a las letras de cada producto y precio del menu*/
+}
+hr{
+    /*height: 3px; /*se pone un alto de 3px*/
+    height: 2px;/*como tiene una arriba abajo y 1 de los lados se pone 2px tomando encuenta el ancho que pone el sistema.*/
+    background-color: brown;/*se le pone color al fondo del hr*/
+    border-color: brown;/*se poner tambien el borde del hr*/
+}
+.bottom-line{
+    margin-top: 25px;
+}
+/*FOOTER*/
+footer{
+    font-size: 14px;
+}
+a{
+    color: black;
+}
+/*esto son pseudo selectores*/
+a:visited{
+    color: gray;
+}
+a:hover{
+    color: brown;
+}
+a:active{
+    color: white;
+}
+.address{
+    margin-bottom: 5px;
+}
+/* se utiliza margin block para ocupar el ancho disponible y al utilizar margin se centra el la imagen*/
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* en este caso se elimina el margen de arriba pero se comenta por que habiamos modificado el boody
+    margin-top: -25%;*/
+}
